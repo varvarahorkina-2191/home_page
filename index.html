@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Варвара Хоркина — обо мне</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+
+    <!-- Шрифты для заголовков и основного текста -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header id="top">
+        <div class="container">
+            <p class="name">Варвара Хоркина</p>
+            <nav aria-label="Навигация по странице">
+                <a href="#about">Обо мне</a>
+                <a href="#interests">Мои интересы</a>
+                <a href="#facts">Факты обо мне</a>
+                <a href="#dream">Моя мечта</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Знакомство -->
+        <section id="about">
+            <div class="container intro">
+                <div class="intro-text">
+                    <h1>Привет! Я Варя</h1>
+                    <p>
+                        Мне 18 лет, я из Твери. Здесь я хочу немного
+                        рассказать о себе, своих увлечениях и планах.
+                    </p>
+                    <p>
+                        Сейчас я учусь в Московском Политехе на направлении
+                        «Прикладная информатика». Мой профиль —
+                        «Разработка и интеграция бизнес-приложений».
+                        Параллельно работаю в SMM.
+                    </p>
+                </div>
+                <img class="portrait" src="images/evening.jpg"
+                     alt="Моя вечерняя фотография у воды"
+                     width="1152" height="1536">
+            </div>
+        </section>
+
+        <!-- Увлечения и фотографии -->
+        <section class="blue-section" id="interests">
+            <div class="container">
+                <h2>Мои интересы</h2>
+                <p>
+                    Мне очень нравится мода. Люблю смотреть, как другие
+                    сочетают вещи, и самой придумывать образы.
+                    Особенно интересно подобрать к одной вещи
+                    что-то разное и посмотреть, как она будет выглядеть.
+                    Вот несколько моих образов:
+                </p>
+                <div class="gallery">
+                    <figure>
+                        <img src="images/avatar.jpg"
+                             alt="Мой образ с леопардовым жакетом и бордовой юбкой"
+                             width="1152" height="1536" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="images/style-green.jpg"
+                             alt="Мой образ с зелёным жакетом и цветочной юбкой"
+                             width="1152" height="1536" loading="lazy">
+                    </figure>
+                    <figure>
+                        <img src="images/style-grey.jpg"
+                             alt="Мой образ с серым жакетом и юбкой с принтом"
+                             width="1152" height="1536" loading="lazy">
+                    </figure>
+                </div>
+                <p>
+                    Ещё люблю фильмы и сериалы — могу просто провести
+                    вечер за просмотром. Но не всё свободное время
+                    провожу дома: мне также нравится ходить в спортзал.
+                </p>
+                <p>
+                    И, конечно, я люблю готовить. Для меня это
+                    не только повседневное дело, но и занятие
+                    в удовольствие.
+                </p>
+            </div>
+        </section>
+
+        <!-- Таблица с фактами обо мне -->
+        <section class="coffee-section" id="facts">
+            <div class="container">
+                <h2>Несколько фактов обо мне</h2>
+                <div class="table-wrapper" tabindex="0"
+                     role="region" aria-label="Факты обо мне">
+                    <table>
+                        <caption>Мои занятия и любимые вещи</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Обо мне</th>
+                                <th scope="col">Подробности</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Чем занималась раньше</th>
+                                <td>Иностранные языки, плавание и музыкальная школа</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Любимая кухня</th>
+                                <td>Итальянская и азиатская</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Мой питомец</th>
+                                <td>У меня есть собака породы ши-тцу по кличке Джеймс</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Любимые цвета</th>
+                                <td>Тёмно-синий и коричневый</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Любимый фильм</th>
+                                <td>«Бойцовский клуб»</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Любимая книга</th>
+                                <td>«Маленькие женщины»</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Планы на путешествия -->
+        <section id="dream">
+            <div class="container">
+                <h2>Моя мечта</h2>
+                <p>
+                    Очень хочу путешествовать по миру. Больше всего
+                    пока мечтаю об Италии. Хочется погулять по Риму
+                    и увидеть места, которые сейчас рассматриваю
+                    на фотографиях. Надеюсь, однажды у меня появятся
+                    свои снимки оттуда!
+                </p>
+                <div class="gallery">
+                    <figure>
+                        <img src="images/colosseum.jpg" alt="Колизей в Риме"
+                             width="736" height="491" loading="lazy">
+                        <figcaption>Колизей, Рим</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/trevi.jpg" alt="Фонтан Треви в Риме"
+                             width="736" height="497" loading="lazy">
+                        <figcaption>Фонтан Треви, Рим</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Варвара Хоркина</p>
+            <a href="#top">Вернуться к началу</a>
+        </div>
+    </footer>
+</body>
+</html>

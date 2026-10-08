@@ -1,0 +1,197 @@
+/* Основные настройки страницы */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFFBF2;
+    color: #3D2722;
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+h1, h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+    color: #8E1825;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 36px;
+    color: #8E1825;
+}
+
+p {
+    margin: 0 0 18px;
+}
+
+a {
+    color: #8E1825;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Шапка и меню */
+header {
+    padding: 22px 0;
+    background-color: #8E1825;
+    color: #FFFBF2;
+    border-bottom: 6px solid #C8D9EC;
+}
+
+.name {
+    margin-bottom: 10px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+}
+
+nav a, footer a {
+    color: #FFEDAD;
+    text-decoration: none;
+}
+
+nav a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* Разделы и главное фото */
+section {
+    padding: 38px 0;
+    border-bottom: 1px solid #D9C7B9;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.portrait {
+    width: 240px;
+    border: 6px solid #C8D9EC;
+}
+
+.blue-section {
+    background-color: #C8D9EC;
+}
+
+.coffee-section {
+    background-color: #D8C3AE;
+}
+
+/* Галереи фотографий */
+.gallery {
+    display: flex;
+    gap: 18px;
+    margin: 24px 0;
+}
+
+.gallery figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* Таблица */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFBF2;
+}
+
+caption {
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #8E1825;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    background-color: #8E1825;
+    color: #FFFBF2;
+}
+
+/* Подвал */
+footer {
+    padding: 24px 0;
+    background-color: #8E1825;
+    color: #FFFBF2;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+/* На телефоне фото располагаются друг под другом */
+@media (max-width: 650px) {
+    .intro, .gallery {
+        flex-direction: column;
+    }
+
+    .portrait {
+        width: 240px;
+    }
+
+    .gallery figure {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    table {
+        min-width: 480px;
+    }
+}
